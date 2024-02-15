@@ -1,0 +1,16 @@
+{
+  "name": "immutablex-listener",
+  "version": "1.0.0",
+  "description": "A listener for immutable nft buys",
+  "main": "index.js",
+  "author": "twitter.com/lelerukjaymoh",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "dotenv": "^16.4.4",
+    "ethers": "^6.11.1"
+  },
+  "scripts": {
+    "start": "node -r dotenv/config index.js"
+  }
+}
