@@ -13,7 +13,7 @@
   },
   "scripts": {
     "build": "tsc",
-    "start": "node -r dotenv/config ./dist/index.js",
+    "start": "node -r dotenv/config ./dist/index.js NODE_ENV=production",
     "dev": "ts-node-dev -r dotenv/config --transpile-only index.ts"
   },
   "devDependencies": {
