@@ -8,9 +8,13 @@
   "private": false,
   "dependencies": {
     "dotenv": "^16.4.4",
-    "ethers": "^6.11.1"
+    "ethers": "^6.11.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.3.3"
   },
   "scripts": {
-    "start": "node -r dotenv/config index.js"
+    "build": "tsc",
+    "start": "node -r dotenv/config ./dist/index.js",
+    "dev": "ts-node-dev -r dotenv/config --transpile-only index.ts"
   }
 }
